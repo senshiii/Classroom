@@ -1,0 +1,199 @@
+/* FONT IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+:root {
+  --primary: rgb(3, 33, 93);
+  --bp-gradient: linear-gradient(
+    to right,
+    rgb(1, 40, 108),
+    rgb(50, 163, 233),
+    rgb(105, 147, 206),
+    rgb(128, 81, 247),
+    rgb(127, 16, 201)
+  );
+}
+
+.HomeWrapper {
+  width: 100vw;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+.Banner {
+  height: 65vh;
+  padding-bottom: 5%;
+  background: var(--primary);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.BannerItem {
+  width: 100%;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.BannerItem img {
+  width: 50%;
+}
+
+.BannerItem * {
+  color: #fff;
+  font-family: "IBM Plex Mono", "Roboto";
+  text-align: center;
+}
+
+.BannerTitle {
+  font-size: 4rem;
+}
+
+.BannerSubtitle {
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+}
+
+.BannerButtons {
+  margin: 0.7rem 0;
+}
+
+.BannerButton {
+  padding: 0.6rem 1.4rem;
+  background: transparent;
+  border-radius: 12px;
+  border: 1.5px solid white;
+  color: #fff;
+  outline: none;
+  margin: 0 0.8rem;
+  font-family: "Roboto";
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.BannerButton:hover {
+  color: var(--primary);
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Features {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.Features .Heading h1 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  color: var(--primary);
+  background: var(--bp-gradient);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.CustomBottomBorder {
+  width: 2rem;
+  height: 5px;
+  border-radius: 10px;
+  background: var(--bp-gradient);
+  margin: 0.5rem auto;
+  opacity: 0.7;
+}
+
+.CMP {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1rem auto;
+}
+
+.CMP > div {
+  margin: 0.5rem 1.5rem;
+}
+
+.CMP > div > img {
+  width: 80%;
+}
+
+.CMP > div > p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.HeadingBig {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  font-family: "Fugaz One", "Roboto";
+}
+
+.FeatureGrid {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 1.8rem;
+}
+
+.Feature {
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0 10px -6px rgb(124, 168, 255);
+}
+
+.Feature:hover {
+  box-shadow: 0 0 10px -3px rgb(124, 168, 255);
+}
+
+.Feature img {
+  width: 86px;
+}
+
+.Feature p {
+  margin: 10px 0;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.Footer {
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .BannerItem:nth-child(2) {
+    display: none;
+  }
+  .CMP {
+    flex-direction: column;
+  }
+  .CMP > div > img {
+    width: 50%;
+  }
+  .FeatureGrid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .Feature {
+    box-shadow: 0 0 10px -3px rgb(124, 168, 255);
+  }
+}

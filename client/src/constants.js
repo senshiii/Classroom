@@ -1,0 +1,16 @@
+// CLASSROOM TABS
+export const TAB_LECTURES = "TAB_LECTURES";
+export const TAB_ASSIGNMENTS = "TAB_ASSIGNMENTS";
+export const TAB_MEMBERS = "TAB_MEMBERS";
+export const TAB_LECTURE = "TAB_LECTURE";
+export const TAB_MANAGE = "TAB_MANAGE";
+
+// DASHBOARD TABS
+export const TAB_STUDENT_CLASSROOMS = "STUDENT_CLASSROOMS";
+export const TAB_TEACHER_CLASSROOMS = "TEACHER_CLASSROOMS";
+export const TAB_SETTINGS_PROFILE = "SETTINGS_PROFILE";
+export const TAB_SETTINGS_CLASSROOM = "SETTINGS_CLASSROOM";
+
+export const DRAWER_WIDTH = "20vw";
+
+export const ERROR_MSG = "Unknown Error Occured! Try again later";

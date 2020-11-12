@@ -1,0 +1,32 @@
+{
+  "name": "classroom",
+  "version": "1.0.0",
+  "description": "A classroom app for effective online teaching and learning",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "dev": "concurrently -n server,client -c blue,yellow \"npm run server\" \"npm run client\" ",
+    "client-install": "npm install --prefix client",
+    "project-install": "npm install && npm run client-install",
+    "start": "node app.js"
+  },
+  "author": "Sayan Das",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.761.0",
+    "axios": "^0.20.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^63.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.14"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
